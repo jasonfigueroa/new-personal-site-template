@@ -124,6 +124,10 @@ nav li a:active {
     align-items: center;
 }
 
+#buttonRunningOffScreen {
+    max-width: 95%;
+}
+
 @media screen and (max-width: 675px) {
     .topnav ul {
         display: none;

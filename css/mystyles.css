@@ -12,6 +12,12 @@ img {
     height: auto;
 }
 
+#splash-img {
+    /* height: calc(100% - 36px); */
+    width: auto;
+    padding: 3em 0;
+}
+
 /* .landing-image-container {
     border: 1px solid blue;
 } */
@@ -117,6 +123,10 @@ nav li a:active {
 
 }
 
+.topnav {
+    border-bottom: 1px solid lightgray;
+}
+
 .topnav div {
     display: flex;
     justify-content: space-between;
@@ -139,6 +149,14 @@ nav li a:active {
         /* width: 3em; */
         text-align: center;
         padding: .4em 1em;
+    }
+
+    .topnav {
+        border-bottom: 0;
+    }
+
+    .topnav div{
+        border-bottom: 1px solid lightgray;
     }
   }
   

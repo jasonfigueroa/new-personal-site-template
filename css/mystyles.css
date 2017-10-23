@@ -57,6 +57,12 @@ nav {
     /* height: 35px; */
 }
 
+#brand {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #222;
+}
+
 nav h5 {
     margin-bottom: 0;
 }

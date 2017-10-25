@@ -1,0 +1,7 @@
+
+@media (min-width: 550px) {
+    .job-date-rng {
+        /* float: right; */
+        text-align: right;
+    }
+}

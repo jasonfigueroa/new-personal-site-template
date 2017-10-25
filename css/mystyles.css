@@ -6,6 +6,18 @@
     background-color: wheat;
 } */
 
+/* .text-align-right {
+    text-align: right;
+} */
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 img {
     /* width: 100%; */
     max-width: 100%;

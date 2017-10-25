@@ -30,7 +30,7 @@ h2 {
     text-align: center;
 }
 
-p i {
+/* p i {
     border: 1px solid black;
     padding: .5em;
     border-radius: 50%;
@@ -44,7 +44,7 @@ p i:first-of-type {
 p i:nth-of-type(2) {
     padding-left: .3em;
     padding-right: .3em;
-}
+} */
 
 /* footer {
     background: #2c3e50;
@@ -142,6 +142,14 @@ nav li a:active {
 
 #buttonRunningOffScreen {
     max-width: 95%;
+}
+
+#quote {
+    font-style: italic;
+}
+
+#quote span {
+    float: right;
 }
 
 @media screen and (max-width: 675px) {

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jason Figueroa</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- font awesome -->
+  <script src="https://use.fontawesome.com/1fa079d759.js"></script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/mystyles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <!-- jQuery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+  <div class="container">
+      <nav class="topnav" id="myTopnav">
+        <div>
+          <a id="brand" href="/"><i class="fa fa-rocket" aria-hidden="true"></i> Jason Figueroa</a>
+          <a href="https://google.com" onclick="toggleResponsiveNav();return false;" id="menuIcon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>        
+        <ul>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <!-- should I add a no-script.html page -->
+          <!-- <li id="menuIcon"><a href="https://google.com" onclick="toggleResponsiveNav();return false;"><i class="fa fa-bars" aria-hidden="true"></i></a></li> -->
+        </ul>
+        <!-- <div id="menuIcon">
+          
+        </div> -->
+        </nav>
+  </div>
+  
+  <div class="landing-image-container">
+      <img src="images/paul-morris-303977.jpg" id="splash-img">
+  </div>
+  <!-- <img src="http://via.placeholder.com/1920x1080"> -->
+  <!-- .container is main centered wrapper -->
+<div class="container">
+    <h2>My Blog</h2>
+    <p>I have a <a href="https://jasonfigueroa.github.io">blog</a> that I started in the spring of 2017. It’s a statically generated site hosted on GitHub. I built the site using <a href="https://blog.getpelican.com/">Pelican</a>, a static site generator written in Python. The content written for that site is written in Markdown and the theme I used is a Pelican theme by <a href="https://parbhatpuri.com/">parbhat</a>, which I modified slightly. The workflow for updating that site is very concise which makes it a breeze to push content to the web.</p>
+    <p>There are somethings I don’t like about that site. Due to my lack of knowledge of the underlying technologies that comprise Pelican I must depend on a lot of “magic” which I don’t like. Also, I’m not entirely happy with the design and responsiveness of the site.</p>
+    <p>I will continue to push content to that site just because of how fast and simple it is to publish to that site.</p>
+    <h2>This Site</h2>
+    <p>This site is a personal site I’m creating while I’m at <a href="http://nashvillesoftwareschool.com/">Nashville Software School</a> (NSS). I’m taking a different approach to this site. All the code so far has been created from scratch. There is very minimal “borrowed” code. For example, the font used in this site is the same font used in Skeleton. I believe this approach will benefit me the most in the long run. I really want to gain a solid grasp on the fundamental technologies powering the users’ experience when interfacing with modern web applications. I’ll use this project to keep my HTML, CSS and JavaScript skills sharp. Maybe later down the road I’ll incorporate other technologies such as jQuery and Ajax.</p>
+    <p>This site is hosted on a server I have with <a href="https://www.digitalocean.com/">Digital Ocean</a>. I was using Amazon AWS before but my monthly bill was coming in at around $25 which for a student is way too much. Plus, with that kind of money I can have 5 servers with Digital Ocean. The only catch with Digital Ocean is that I must manage the server myself, with Amazon AWS I basically just dragged and dropped the files I wanted to upload.</p>
+    <h2>Other Projects</h2>
+    <p>I have had two other projects in the past, mostly with static content and using the Bootstrap Framework. I will probably provide a link within this site to those projects eventually.</p>
+</div>
+
+  <!-- js -->
+  <script src="js/scripts.js"></script>
+  
+  <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

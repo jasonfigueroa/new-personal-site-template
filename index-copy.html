@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jason Figueroa</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- font awesome -->
+  <script src="https://use.fontawesome.com/1fa079d759.js"></script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/mystyles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <!-- jQuery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div> -->
+  <div class="container">
+      <nav class="topnav" id="myTopnav">
+        <div>
+          <a id="brand" href="/"><i class="fa fa-rocket" aria-hidden="true"></i> Jason Figueroa</a>
+          <a href="https://google.com" onclick="toggleResponsiveNav();return false;" id="menuIcon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>        
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <!-- should I add a no-script.html page -->
+          <!-- <li id="menuIcon"><a href="https://google.com" onclick="toggleResponsiveNav();return false;"><i class="fa fa-bars" aria-hidden="true"></i></a></li> -->
+        </ul>
+        <!-- <div id="menuIcon">
+          
+        </div> -->
+        </nav>
+  </div>
+  
+  <div class="landing-image-container">
+      <img src="images/paul-morris-303977.jpg" id="splash-img">
+  </div>
+  <!-- <img src="http://via.placeholder.com/1920x1080"> -->
+  <!-- .container is main centered wrapper -->
+<div class="container">
+  
+    <!-- columns should be the immediate child of a .row -->
+    <!-- <div class="row">
+      <div class="one column">One</div>
+      <div class="twelve columns">
+          <img src="http://via.placeholder.com/1920x1080">
+      </div>
+    </div> -->
+  
+    <!-- just use a number and class 'column' or 'columns' -->
+    <!-- <div class="row">
+      <div class="two columns">Two</div>
+      <div class="ten columns">Ten</div>
+    </div> -->
+  
+    <!-- there are a few shorthand columns widths as well -->
+    <!-- <div class="row">
+      <div class="one-third column">1/3</div>
+      <div class="two-thirds column">2/3</div>
+    </div> -->
+    <div class="row">
+      <div>
+        <h2>Portfolio</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-third column">
+        <img src="http://via.placeholder.com/350x250">
+      </div>
+      <div class="one-third column">
+        <img src="http://via.placeholder.com/350x250">
+      </div>    
+      <div class="one-third column">
+        <img src="http://via.placeholder.com/350x250">
+      </div>
+    </div>
+    <div class="row">
+        <div class="one-third column">
+          <img src="http://via.placeholder.com/350x250">
+        </div>
+        <div class="one-third column">
+          <img src="http://via.placeholder.com/350x250">
+        </div>    
+        <div class="one-third column">
+          <img src="http://via.placeholder.com/350x250">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <h2>About Us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-by-two four columns">
+            <p>Phasellus non ligula erat. Sed lectus felis, sollicitudin vel felis eu, lobortis ornare erat. Praesent in nisl sed velit ornare bibendum. Aenean facilisis imperdiet felis, id malesuada nisi feugiat eget. Nullam elementum lacinia enim et ultricies. Phasellus laoreet scelerisque dictum. Sed mi orci, laoreet at euismod eget, auctor sit amet nisi.</p>
+        </div>
+        <div class="four columns">
+            <p>Proin pharetra turpis ut dui malesuada dictum. Aenean sed lacus sed arcu interdum dictum. Aliquam vestibulum blandit porttitor. Proin semper rhoncus tellus, finibus dignissim neque commodo ac. Curabitur augue nibh, venenatis placerat elit ut, rutrum ullamcorper massa. Proin consectetur posuere lacus sed bibendum. </p>
+        </div>
+      </div>
+      <div class="row center-button-container">
+          <a class="button button-primary" href="#"><i class="fa fa-download" aria-hidden="true"></i> Download Theme</a>
+      </div>
+      <div class="row">
+        <h2>Contact Us</h2>
+      </div>
+      <form>
+        <div class="row">
+          <div class="offset-by-two eight columns">
+            <label for="name">Name</label>
+            <input class="u-full-width" type="text" id="name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-by-two eight columns">
+            <label for="email">Email</label>
+            <input class="u-full-width" type="email" id="email">
+          </div>
+          </div>
+          <div class="row">
+            <div class="offset-by-two eight columns">
+              <label for="phone">Phone</label>
+              <input class="u-full-width" type="tel" id="phone">
+            </div>
+          </div>          
+          <div class="row">
+            <div class="offset-by-two eight columns">
+              <label for="message">Message</label>
+              <textarea class="u-full-width" id="message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div id="buttonRunningOffScreen" class="offset-by-two column">  
+              <input class="button-primary" type="submit" value="Submit">
+            </div>
+          </div>
+        </form>
+      <!-- <div class="one-half column">
+        <img src="http://via.placeholder.com/350x150">
+        <p>Phasellus non ligula erat. Sed lectus felis, sollicitudin vel felis eu, lobortis ornare erat. Praesent in nisl sed velit ornare bibendum. Aenean facilisis imperdiet felis, id malesuada nisi feugiat eget. Nullam elementum lacinia enim et ultricies. Phasellus laoreet scelerisque dictum. Sed mi orci, laoreet at euismod eget, auctor sit amet nisi.</p>
+      </div>
+      <div class="one-half column">
+        <img src="http://via.placeholder.com/350x150">
+        <p>Proin pharetra turpis ut dui malesuada dictum. Aenean sed lacus sed arcu interdum dictum. Aliquam vestibulum blandit porttitor. Proin semper rhoncus tellus, finibus dignissim neque commodo ac. Curabitur augue nibh, venenatis placerat elit ut, rutrum ullamcorper massa. Proin consectetur posuere lacus sed bibendum. Nullam vitae ornare eros, non porta nisl. Nulla ullamcorper tincidunt neque, at tempor velit lobortis commodo. Vivamus vel massa ac diam porttitor congue. Vestibulum ante libero, elementum sit amet odio et, varius laoreet ipsum.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <img src="http://via.placeholder.com/350x150">
+        <p>Vivamus luctus hendrerit orci vitae posuere. Suspendisse tempus mauris sed laoreet placerat. Donec ac aliquet mauris, at posuere arcu. Sed cursus dui ut lorem viverra vestibulum. Mauris fringilla ac dui vel porttitor. Nunc hendrerit nibh eu ex aliquam elementum. Proin ornare feugiat accumsan. Integer vehicula egestas ligula fringilla consectetur. Praesent non consequat lacus. Phasellus non suscipit ante. Cras semper hendrerit ex, sed tempor lectus interdum non. Sed venenatis arcu a ex rhoncus sollicitudin. Sed laoreet accumsan enim, sed congue elit pretium non. Donec ac lobortis purus. Vivamus convallis posuere lectus, sit amet elementum eros molestie consequat.</p>
+      </div>
+      <div class="one-half column">
+        <img src="http://via.placeholder.com/350x150">
+        <p>Morbi ut laoreet justo. Vivamus vehicula lectus at erat mollis, at aliquam odio lacinia. Quisque laoreet vehicula urna, at blandit massa. Curabitur pellentesque pharetra odio, ut vehicula libero viverra vitae. Nunc molestie, justo sit amet mattis viverra, est ante vestibulum turpis, convallis finibus orci massa ut nunc. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean odio dui, bibendum at magna in, tincidunt luctus lacus.</p>
+      </div>
+    </div> -->
+  
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <h3>Location</h3>
+          <p>
+            3481 Melrose Place<br>
+            Beverly Hills, CA 90210
+          </p>
+        </div>
+        <div class="one-third column">
+          <h3>Around the Web</h3>
+          <p>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="one-third column">
+          <h3>About This Theme</h3>
+          <p>
+              Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- js -->
+  <script src="js/scripts.js"></script>
+  
+  <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

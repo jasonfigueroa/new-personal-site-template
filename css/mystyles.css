@@ -164,7 +164,7 @@ nav li a:active {
     float: right;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 774px) {
     .topnav ul {
         display: none;
     }
@@ -186,7 +186,7 @@ nav li a:active {
     }
   }
   
-  @media screen and (max-width: 675px) {
+  @media screen and (max-width: 774px) {
     .topnav.responsive {
         
     }

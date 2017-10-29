@@ -16,11 +16,11 @@ const blog_db = {
             "article_date": {"datetime": "2017-10-27", "text": "October 27, 2017"},
             "article_author": "Jason Figueroa",
             "article_content": [
-                "I wanted to write a blog post but wasn’t sure what to write about. Well, I’ve been working a lot with JavaScript lately and have been loving it. I come from a background of mostly C and Java with a dash of Python 😉. Passing functions as arguments and returning functions is all very new for me so I was considering writing about first-class functions, higher-order functions and/or closures. These are all brand-new concepts for me.",
+                "I wanted to write a blog post but wasn’t sure what to write about. Well, I’ve been working a lot with JavaScript lately and have been having a lot of fun with it. I come from a background of mostly C and Java with a dash of Python 😉. Passing functions as arguments and returning functions is all very new to me so I was considering writing about first-class functions, higher-order functions and/or closures.",
                 "Well I started researching online and watching a few videos on YouTube. After a while I was feeling comfortable with what I learned so I decided to create an implementation of Fibonacci.",
                 "I will not delve into the details of Fibonacci numbers but there were two concepts I knew right off the bat I wanted to incorporate into the solution. The first was recursion. The second was closures, although I had no idea how I was going to implement the latter with Fibonacci.",
                 "Before I started developing the solution I decided that I wanted to have some sort of timer to capture the duration of the solution. Fibonacci executes a lot of recursive calls and a lot of redundant calculations making it very slow when trying to calculate higher numbers.",
-                "The following is what I came up with for timer.",
+                "The following is what I came up with for a timer.",
                 "gist",
                 "A higher order function returning another function. The function to be timed in this case is Fibonacci. The higher-order function, timer, is to be called just before the execution of Fibonacci. The returned function is to be executed on the completion of Fibonacci. The anonymous function returned also carries a record of the context in which it was created, in this case the variable startTime. This anonymous function along with the context make up a closure.",
                 "The following is what I used to report my findings.",

@@ -62,15 +62,19 @@ const projects_data = JSON.parse(localStorage.getItem("jasonfigueroa.io/projects
 let html = ``;
 
 projects_data.projects.forEach( (project) => {
+    html += `<article>`;
     html += `<h2>${ project.project_title }</h2>`;
     project.project_content.forEach( (paragraph) => {
         html += `<p>${ paragraph }</p>`;
     });
+    html += `</article>`;
 });
 
 // adding other projects
+html += `<article>`;
 html += `<h2>${ projects_data.other_projects.title }</h2>`;
 html += `<p>${ projects_data.other_projects.content }</p>`;
+html += `</article>`;
 
 document.getElementById("projects").innerHTML += html;
 /***************/

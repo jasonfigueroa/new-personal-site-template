@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "project_id": "1",
+            "project_name": "blog",
+            "date_completed": "",
+            "technologies_used": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Pelican"
+            ],
+            "teammates": []
+        },
+        {
+            "project_id": "2",
+            "project_name": "personal-site",
+            "date_completed": "",
+            "technologies_used": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Skeleton"
+            ],
+            "teammates": []
+        }
+    ]
+}

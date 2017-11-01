@@ -23,6 +23,8 @@
 
 #paginationButtons a {
     text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .disableAnchor {

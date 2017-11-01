@@ -2,23 +2,14 @@ paginationEl = document.getElementById("paginationButtons");
 
 articleElements = document.getElementById('articles').getElementsByTagName('article');
 
-const totalArticles = articleElements.length
-const articlesPerPage = 5;
+const totalArticles = articleElements.length // based on blog.html
+const articlesPerPage = 5; // adjusted here
 const totalPages = Math.ceil(totalArticles / articlesPerPage);
 
 let selectedPage = "page_1";
 
 const pages = {};
 
-/*******************/
-/* TODO 10/31/2017 */
-/*******************/
-// need to modulo something in this function, right now it's pushing 5 "articles"
-// regardless if there is a need for 5 or less
-
-// on last page should push the remaining articles, not 5
-
-// endingValue is the value that needs to fluctuate
 function slice(iterableCollection, startingValue, endingValue) {
     let arr = []
     for(let i = startingValue; i < endingValue; i++) {
@@ -26,15 +17,15 @@ function slice(iterableCollection, startingValue, endingValue) {
     }
     return arr;
 }
-/***********************/
-/* END TODO 10/31/2017 */
-/***********************/
-
-// let arrayNameTemplate = "page_"
 
 for (let i = 0; i < totalPages; i++) {
     let arrayNameTemplate = "page_" + (i + 1);
-    pages[arrayNameTemplate] = slice(articleElements, (i*articlesPerPage), (i*articlesPerPage) + articlesPerPage);
+    // 11/01/2017 the following if/else is a messy fix, try to clean up later
+    if(i === (totalPages - 1) && totalArticles % articlesPerPage != 0) {
+        pages[arrayNameTemplate] = slice(articleElements, (i*articlesPerPage), (i*articlesPerPage) + totalArticles % articlesPerPage);
+    } else {
+        pages[arrayNameTemplate] = slice(articleElements, (i*articlesPerPage), (i*articlesPerPage) + articlesPerPage);
+    }
 }
 
 const lastPage = "page_" + Object.keys(pages).length
@@ -54,7 +45,6 @@ function hideSelectedPage(page) {
 }
 
 function showPage(page) {
-    // "page_1"
     pages[page].forEach( (article) => {
         article.classList.remove('hide');
     } );
@@ -90,9 +80,6 @@ function enablePaginationButtons() {
     for (let i = 0; i < anchors.length; i++) {
         anchors[i].classList.remove('disableAnchor');
     }
-    // anchors.forEach(anchor => {
-    //     anchor.classList.remove('disableAnchor');
-    // });
 }
 
 // init
@@ -125,5 +112,3 @@ function getId(el) {
     enablePaginationButtons();
     disablePaginationButtons(selectedPage);
 }
-
-// onchange enable all pagination buttons and run disablePaginationButtons
